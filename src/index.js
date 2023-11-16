@@ -1,13 +1,15 @@
 import {createHeader} from "./header";
 import {createAbout} from "./about";
-import {createContact} from "./contact";
-import {createMenu} from "./menu";
 import "./style.css";
 
 createHeader();
 createAbout();
-createContact();
-createMenu();
+
+function emptyContainer() {
+    const container = document.querySelector('#container');
+    container.innerHTML = '';
+}
+
 
 /*
 

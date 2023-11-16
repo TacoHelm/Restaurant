@@ -12,9 +12,9 @@ contact[1] = {
 
 function createContact () {
     const container = document.querySelector('#container');
+    container.innerHTML = '';
     let title = [];
     let text = [];
-    console.log(container);
     for (let i = 0; i < contact.length; i++) {
         title[i] = container.appendChild(document.createElement('h3'));
         text[i] = container.appendChild(document.createElement('p'));

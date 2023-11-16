@@ -21,6 +21,7 @@ menu [2] = {
 
 function createMenu () {
     const container = document.querySelector('#container');
+    container.innerHTML = '';
     const title = container.appendChild(document.createElement('h3'));
     title.textContent = "Menu";
     const table = container.appendChild(document.createElement('table'));

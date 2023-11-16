@@ -1,3 +1,7 @@
+import { createAbout } from "./about";
+import { createContact } from "./contact";
+import { createMenu } from "./menu";
+
 function createHeader()  {
     const content = document.querySelector('#content');
     const header = content.appendChild(document.createElement('div'));
@@ -14,9 +18,9 @@ function createHeader()  {
     contact.textContent = "Contact"; 
     container.setAttribute('id', 'container');
 
-    about.addEventListener('click', (e) => console.log('about'));
-    menu.addEventListener('click', (e) => console.log('menu'));
-    contact.addEventListener('click', (e) => console.log('contact'));
+    about.addEventListener('click', () => createAbout());
+    menu.addEventListener('click', () => createMenu());
+    contact.addEventListener('click', (e) => createContact());
 
 }
 

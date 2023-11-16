@@ -12,9 +12,9 @@ about[1] = {
 
 function createAbout () {
     const container = document.querySelector('#container');
+    container.innerHTML = '';
     let title = [];
     let text = [];
-    console.log(container);
     for (let i = 0; i < about.length; i++) {
         title[i] = container.appendChild(document.createElement('h3'));
         text[i] = container.appendChild(document.createElement('p'));
