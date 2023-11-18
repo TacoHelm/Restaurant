@@ -31,8 +31,14 @@ h1{
 }
 
 .button{
-    padding: 1rem;
-    margin: 0rem 1rem;
+    width: 6rem;
+    padding: .5rem 0rem;
+    margin: 1rem 2rem;
+    text-align: center;
+}
+
+.active{
+    border-bottom: 5px solid white;
 }
 
 h3{
