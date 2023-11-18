@@ -1,3 +1,72 @@
-div {
-    color: red;
+:root{
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow: auto;
+    color: white;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#content{
+    width: 50%;
+    height: 100vh;
+    background-color: rgb(26, 26, 26, 0.9);
+    margin: -8px;
+    padding: 1rem 4rem;
+}
+
+h1{
+    text-align: center;
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+}
+
+.button{
+    padding: 1rem;
+    margin: 0rem 1rem;
+}
+
+h3{
+    text-align: center;
+}
+
+p{
+    margin-bottom: 2rem;
+}
+
+.tableContainer{
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    width: 600px;
+}
+
+.name{
+
+}
+
+.secondRow{
+    height: 3rem;
+}
+
+.ingredients{
+    font-size: .75rem;
+    font-style: italic;
+    vertical-align: top;
+}
+
+.price{
+
 }

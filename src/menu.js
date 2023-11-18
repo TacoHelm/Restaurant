@@ -24,7 +24,9 @@ function createMenu () {
     container.innerHTML = '';
     const title = container.appendChild(document.createElement('h3'));
     title.textContent = "Menu";
-    const table = container.appendChild(document.createElement('table'));
+    const tableContainer = container.appendChild(document.createElement('div'));
+    tableContainer.classList.add('tableContainer');
+    const table = tableContainer.appendChild(document.createElement('table'));
     let name = [];
     let ingredients = [];
     let price = [];
@@ -36,9 +38,13 @@ function createMenu () {
         name[i] = row1[i].appendChild(document.createElement('td'));
         ingredients[i] = row2[i].appendChild(document.createElement('td'));
         price[i] = row1[i].appendChild(document.createElement('td'));
+        row2[i].classList.add('secondRow');
         name[i].textContent = menu[i].name;
+        name[i].classList.add('name');
         ingredients[i].textContent = menu[i].ingredients;
+        ingredients[i].classList.add('ingredients');
         price[i].textContent = menu[i].price;
+        price[i].classList.add('price');
     }
     
 }

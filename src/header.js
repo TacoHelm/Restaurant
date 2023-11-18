@@ -1,14 +1,11 @@
-import { createAbout } from "./about";
-import { createContact } from "./contact";
-import { createMenu } from "./menu";
-
 function createHeader()  {
     const content = document.querySelector('#content');
     const header = content.appendChild(document.createElement('div'));
     const title = header.appendChild(document.createElement('h1'));
-    const about = header.appendChild(document.createElement('div'));
-    const menu = header.appendChild(document.createElement('div'));
-    const contact = header.appendChild(document.createElement('div'));
+    const buttons = header.appendChild(document.createElement('div')); 
+    const about = buttons.appendChild(document.createElement('div'));
+    const menu = buttons.appendChild(document.createElement('div'));
+    const contact = buttons.appendChild(document.createElement('div'));
     const container = content.appendChild(document.createElement('div'));
     
 
@@ -16,11 +13,11 @@ function createHeader()  {
     about.textContent = "Over";
     menu.textContent = "Menu";
     contact.textContent = "Contact"; 
+    buttons.classList.add('button-container')
+    about.classList.add('button');
+    menu.classList.add('button');
+    contact.classList.add('button');
     container.setAttribute('id', 'container');
-
-    about.addEventListener('click', () => createAbout());
-    menu.addEventListener('click', () => createMenu());
-    contact.addEventListener('click', (e) => createContact());
 
 }
 
